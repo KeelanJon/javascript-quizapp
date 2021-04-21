@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="game.css">
+    <title>Game Page</title>
+    <script type="module" src="/app.js" async></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-------------------------------------------------------------------->
+            <!-----------------------------SCORE AND HUDE AREA-------------------------->
+            <!-------------------------------------------------------------------->
+        <div id="gameScreen"class="flex-column flex-center">
+            <div class="hud flex justify-between">
+               <div class="hud-item">
+                   <p>Question <span id="questionNumber">1</span> of 10</p>
+                   <div class="progress-bar-container">
+                       
+                       <div class="progress-bar" ></div>
+                   </div>
+               </div>
+               <div class="hud-item">
+                   <div id="score">0</div>
+                   <p>Score</p>
+               </div>
+            </div>
+            <div class="question-hud">
+                <h2 id="question">
+                    Do you know the answer to this question?
+                </h2>
+            </div>
+
+            <!-------------------------------------------------------------------->
+            <!-----------------------------ANSWERS BUTTONS-------------------------->
+            <!------------------------Text Values will be replaced via app.js------------------------------->
+            <div class="choices-container">
+                <p class="choice-text btn choice-btn" value="1">
+                    Answer One
+                </p>
+                <p class="choice-text btn choice-btn" value="2">
+                    Answer Two
+                </p>
+                <p class="choice-text btn choice-btn" value="3">
+                    Answer Three
+                </p>
+                <p class="choice-text btn choice-btn" value="4">
+                    Answer Four
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

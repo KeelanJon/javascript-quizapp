@@ -1,0 +1,54 @@
+.hud {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.hud-item {
+  flex: 1;
+  text-align: left;
+}
+
+.hud-item:nth-of-type(2) {
+  text-align: center;
+}
+
+.progress-bar-container {
+  width: 15rem;
+  border: 2px solid #4136f1;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  background: linear-gradient(90.04deg, #8743ff 1.85%, #4136f1 91.16%);
+  height: 2rem;
+  width: 0%;
+  border-radius: 8px;
+}
+
+.question-hud {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+h2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 80%;
+}
+
+#score {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.choices-container {
+  width: 100%;
+}
+
+.choice-btn {
+  width: 100%;
+  cursor: pointer;
+  font-weight: 500;
+}
