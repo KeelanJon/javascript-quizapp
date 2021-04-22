@@ -15,28 +15,39 @@ let currentCorrectAnswer = null;
 //With a base of 0, number of questions is 10
 const MAX_QUESTIONS = 9;
 
-//Start game function
+//Where it all begins...it's time to start the game
 function startGame() {
+  //Whats this?! A humble tron reference in the log
   console.log("We're on the grid");
   console.log("Let the games begin");
 
+  //Reseting the score and question counter to 0
   questionCounter = 0;
   score = 0;
 
+  //Loading the questions
   loadQuestion();
 }
 
 function loadQuestion() {
+  /*First things first, a small if statement to check if we have
+  answered all of the questions. In this case we have 10 questions,
+  so if questionCounter is equal to 9 (base of 0, so 10), we send the user 
+  to the end screen. Otherwise continue through the function*/
+
   if (questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("/end.html");
+    return window.location.assign("../end.html");
   }
 
+  /*Sets the question element equal to the question variable
+  contained within the questions array imported from the quizQuestions file*/
   questionText.innerHTML = questions[questionCounter].question;
 
-  //Adjusting progress bar width, by calculating percentage of width
-  //against the acmount of questions in the quiz
+  /*Adjusting progress bar width, by calculating percentage of width
+  against the acmount of questions in the quiz*/
+  //Standard formula for calculating a percentage, ((value/totalValue) * 100).
   progressBar.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
   loadAnswers();
