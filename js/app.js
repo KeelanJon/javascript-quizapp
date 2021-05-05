@@ -38,7 +38,7 @@ function loadQuestion() {
   if (questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("../end.html");
+    return window.location.assign("/javascript-quizapp/end.html");
   }
 
   /*Sets the question element equal to the question variable
