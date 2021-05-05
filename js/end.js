@@ -57,7 +57,7 @@ function saveScore(e) {
   //converted back into JSON/objects when getting the data back.
   localStorage.setItem("highScores", JSON.stringify(highScores));
   //Lastly we move the user back to the home directory using the window.location.assign() method.
-  window.location.assign("/");
+  window.location.assign("/javascript-quizapp/");
 }
 
 /*Now this was surprisingly a lot of typing! But if you're a developer and so happen
