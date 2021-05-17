@@ -1,4 +1,4 @@
-//caching the DOM
+//caching the DOOOOOM!!!
 const playerScore = document.querySelector("#finalScore");
 const username = document.querySelector("#username");
 const saveButton = document.querySelector("#saveBtn");
@@ -7,7 +7,7 @@ const saveButton = document.querySelector("#saveBtn");
 //Note the use of JSON.parse. This converts the string received
 //into a Javascript object
 //One more NOTE! Notice the use of or array, this ensures the returned
-//value is equal to an empty array instead on null should highScores no exist yet
+//value is equal to an empty array instead on null should highScores not exist yet
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 //Retrieving latest score from local storage

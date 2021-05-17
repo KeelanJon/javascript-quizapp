@@ -27,7 +27,7 @@ const questions = [
       `<script src="app.js">`,
       `<JAVA import="app.js">`,
     ],
-    answer: 1,
+    answer: 3,
   },
   {
     question: "How do you define a click event in Javascript?",
@@ -41,12 +41,12 @@ const questions = [
   },
   {
     question:
-      "How do you output `The beacons are lit!` in an alert box in Javascript?",
+      "How do you output `Stupid fat Hobbitsis!` in an alert box in Javascript?",
     choice: [
       "sendAlert(`The beacons are lit!`)",
       "log(``The beacons are lit!)",
       "alertThis(`The beacons are lit!`)",
-      "alert(`The bacons are lit!`)",
+      "alert(`Stupid fat Hobbitsis!`)",
     ],
     answer: 4,
   },
@@ -61,7 +61,7 @@ const questions = [
     answer: 2,
   },
   {
-    question: "How do you write if `x` is not equal to 20 is JavaScript?",
+    question: "How do you write if `x` is not equal to 20 in JavaScript?",
     choice: [
       "if.(is less than 20)",
       "if x = 20",
